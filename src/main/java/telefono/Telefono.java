@@ -4,6 +4,8 @@ import agregacion.MicroSd;
 import agregacion.Sim;
 import composicion.Bateria;
 
+import java.util.Arrays;
+
 public class Telefono {
     private String marca;
     private String sistemaOperativo;
@@ -34,8 +36,20 @@ public class Telefono {
     }
 
     public String insertMicroSd(MicroSd microSd){
-        return "Micro sd insertada" + microSd;
+        this.microSd = microSd;
+        return "Micro sd insertada";
     }
 
 
+    @Override
+    public String toString() {
+        return "Telefono{" +
+                "marca='" + marca + '\'' +
+                ", sistemaOperativo='" + sistemaOperativo + '\'' +
+                ", bateria=" + bateria +
+                ", numeroDeSim=" + numeroDeSim +
+                ", sims=" + Arrays.toString(sims) +
+                ", microSd=" + microSd +
+                '}';
+    }
 }

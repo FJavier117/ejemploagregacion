@@ -15,11 +15,10 @@ public class Main {
         MicroSd microSd = new MicroSd();
         microSd.setCapacidad("128Gb");
         microSd.setClase("10");
-
         //Agregación
         miTelefono.insertarSim(telcel);
         System.out.println(miTelefono.insertarSim(movistar));
         System.out.println(miTelefono.insertMicroSd(microSd));
-
     }
+
 }

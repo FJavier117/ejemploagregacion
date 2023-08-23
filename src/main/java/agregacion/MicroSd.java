@@ -4,6 +4,11 @@ public class MicroSd {
     private String capacidad;
     private String clase;
 
+    public MicroSd(){
+        this.capacidad = "0gb";
+        this.clase = "no definido";
+    }
+
     public void setCapacidad(String capacidad) {
         this.capacidad = capacidad;
     }
